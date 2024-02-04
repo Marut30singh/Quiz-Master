@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Google - Quiz Master</title>
+
+    <!-- Google Sign-In API -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .g-signin2 {
+            margin-bottom: 20px;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login to Quiz Master</h2>
+
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+
+        <script>
+            function onSignIn(googleUser) {
+                // This is where you handle the Google Sign-In response.
+                // You can send the user's ID token to your server for verification.
+                var id_token = googleUser.getAuthResponse().id_token;
+                console.log("ID Token: " + id_token);
+                
+                // Send the token to your backend for server-side verification.
+                // This step is crucial for real-world applications to ensure secure authentication.
+                // Example: Use AJAX to send the token to your server for verification.
+                // More information: https://developers.google.com/identity/sign-in/web/backend-auth
+            }
+        </script>
+    </div>
+</body>
+
+</html>
