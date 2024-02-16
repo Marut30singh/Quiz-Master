@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color: #099ce0;
+            background-color: #312a58;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -41,7 +41,12 @@
         .question {
             margin-bottom: 10px;
         }
-
+        nav {
+            background-color: #ccc8c8;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
         .options {
             display: flex;
             flex-direction: column;
@@ -56,21 +61,33 @@
             color: #fff;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-        }
+            cursor: pointer;}
 
         .result {
             margin-top: 20px;
             font-weight: bold;
         }
+        .btn {
+    padding: 10px 20px;
+    background-color: #66ff00;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 
-<body>
-    <header>
+<body><header>
         
-        <h1>Quiz Master</h1>
-    <a href="Homepage.html">Home</a> </header>
+        <h1>Quiz Master</h1></header>
+    <nav>
+        <a href="Homepage.html">Home</a> \
+        <a href="aboutus.html">About Us</a> \
+        <a href="contact us.html">Contact</a>
+    </nav>
 
     <section class="quiz-container">
         <h2>Question 1</h2>
@@ -84,7 +101,8 @@
         </div>
 
         
-        <p class="result" id="result"></p>
+        <p class="result" id="result"></p> <action="webgame2.html" method="post">
+        <div><button class="btn" onclick="redirectTo('age1.html')">Next</button></div>
     </section>
 
     <script>
@@ -97,5 +115,8 @@
         }
     </script>
 </body>
-
 </html>
+
+
+
+    

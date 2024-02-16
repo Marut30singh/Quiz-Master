@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stage Buttons</title>
+    <style>
+    header {
+        background-color: #312a58;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;}
+         nav {
+            background-color: #ccc8c8;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #314866;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .option {
+            margin: 5px;
+            padding: 10px;
+            width: 200px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;}
+
+    </style>
+</head>
+<body> <header>    
+    <h1>Quiz Master</h1>
+</header> 
+ <nav>
+    <a href="Homepage.html">Home</a> \
+    <a href="aboutus.html">About Us</a> \
+    <a href="contact us.html">Contact</a>
+</nav><div class="quiz-container">
+    <button class="option" onclick="redirectTo('webgame.html')">Stage 1</button>
+    <button class="option" onclick="redirectTo('page2.html')">Stage 2</button>
+    <button class="option" onclick="redirectTo('page3.html')">Stage 3</button>
+    <button class="option" onclick="redirectTo('page4.html')">Stage 4</button>
+    <button class="option"onclick="redirectTo('page5.html')">Stage 5</button>
+    <button class="option" onclick="redirectTo('page6.html')">Stage 6</button>
+    <button class="option"onclick="redirectTo('page7.html')">Stage 7</button>
+    <button class="option"onclick="redirectTo('page8.html')">Stage 8</button>
+    <button class="option" onclick="redirectTo('page9.html')">Stage 9</button>
+    <button class="option"onclick="redirectTo('page10.html')">Stage 10</button>
+</div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
